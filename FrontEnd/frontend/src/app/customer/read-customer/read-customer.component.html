@@ -1,0 +1,25 @@
+<h2>Table of Customers</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Created</th>
+            <th>Last Update</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (iCustomer of customerList; track iCustomer) {
+            <tr>
+                <td>{{ iCustomer.id }}</td>
+                <td>{{ iCustomer.firstName }}</td>
+                <td>{{ iCustomer.lastName }}</td>
+                <td>{{ iCustomer.email }}</td>
+                <td>{{ iCustomer.createdDateTime }}</td>
+                <td>{{ iCustomer.lastUpdatedDateTime }}</td>
+            </tr>
+        }
+    </tbody>
+</table>

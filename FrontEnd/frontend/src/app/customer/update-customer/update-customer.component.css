@@ -1,0 +1,7 @@
+.customer-update-form input[type=text] {
+    width: 500px;
+}
+
+.customer-update-form input[type=email] {
+    width: 500px;
+}

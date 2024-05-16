@@ -1,0 +1,8 @@
+<form class="customer-update-form" [formGroup]="updateCustomerForm" (ngSubmit)="handleSubmit()">
+    <h2>Update Customer</h2>
+    <input type="text" name="customerId" formControlName="customerId" placeholder="ID" (input)="idChanged($event)" />
+    <input type="text" name="firstName" formControlName="firstName" placeholder="First Name" />
+    <input type="text" name="lastName" formControlName="lastName" placeholder="Last Name" />
+    <input type="email" name="email" formControlName="email" placeholder="Email" />
+    <button type="submit">Update Customer</button>
+</form>

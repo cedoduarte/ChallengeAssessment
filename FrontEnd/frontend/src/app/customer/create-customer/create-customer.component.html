@@ -1,0 +1,7 @@
+<form class="customer-create-form" [formGroup]="createCustomerForm" (ngSubmit)="handleSubmit()">
+    <h2>Create Customer</h2>
+    <input type="text" name="firstName" formControlName="firstName" placeholder="First Name" />
+    <input type="text" name="lastName" formControlName="lastName" placeholder="Last Name" />
+    <input type="email" name="email" formControlName="email" placeholder="Email" />
+    <button type="submit">Create New Customer</button>
+</form>
